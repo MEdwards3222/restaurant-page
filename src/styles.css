@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "dancingScript";
+    src: url(./fonts/DancingScript-Regular.woff) format('woff'),
+        url(./fonts/DancingScript-VariableFont_wght.ttf) format('truetype')
+}
+
+.container-fluid {
+    border: 2px solid black;
+}
+
+#content {
+    padding: 0px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    height: 25rem;
+    background-image: url("./img/omlette.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+}
+
+#name-container {
+    font-family: 'dancingScript';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+#restaurant-name {
+    font-size: 7rem;
+    color: white;
+}
+
+#tagline {
+    font-size: 2rem;
+    color: white;
+}
