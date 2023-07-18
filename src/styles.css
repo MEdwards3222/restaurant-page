@@ -51,11 +51,15 @@
 
 #navigation {
     background-color: #fed7aa;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #page-content {
     height: 80vh;
     background-color: #fed7aa;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #carousel-container {
