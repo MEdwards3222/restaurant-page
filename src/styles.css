@@ -56,7 +56,7 @@
 }
 
 #page-content {
-    height: 80vh;
+    height: auto;
     background-color: #fed7aa;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
