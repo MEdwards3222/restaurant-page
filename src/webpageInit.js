@@ -3,7 +3,7 @@ function initializePage() {
 
     content.appendChild(buildBanner());
     content.appendChild(buildNavBar());
-    content.appendChild(buildPageContent());
+    //content.appendChild(buildPageContent());
 
     return content;
 }
@@ -29,6 +29,11 @@ function buildBanner() {
     largeText.appendChild(largeTextNode);
     smallText.appendChild(smallTextNode);
 
+    nameContainer.appendChild(largeText);
+    nameContainer.appendChild(smallText);
+
+    banner.appendChild(nameContainer);
+
     return banner;
 }
 
@@ -44,11 +49,11 @@ function buildNavBar() {
     let menuText = document.createTextNode("Menu");
     let contactText = document.createTextNode("Contact");
 
-    navbar.classList.add("nav nav-underline justify-content-center");
+    navbar.classList.add("nav", "nav-underline", "justify-content-center");
 
-    homeItem.classList.add("nav-item active");
+    homeItem.classList.add("nav-item", "active");
     menuItem.classList.add("nav-item");
-    contactItem.classList.add("nav-item");
+    contactItem.classList.add("nav-item", "contact");
 
     homeLink.setAttribute("href", "#");
     menuLink.setAttribute("href", "#");
@@ -61,7 +66,7 @@ function buildNavBar() {
 
     homeItem.appendChild(homeLink);
     menuItem.appendChild(menuLink);
-    contactItem.appendChild(menuLink);
+    contactItem.appendChild(contactLink);
 
     navbar.append(homeItem, menuItem, contactItem);
 
@@ -208,4 +213,4 @@ function buildPageContent() {
     }
 }
 
-
+export default initializePage;
