@@ -4,7 +4,8 @@ import bagel from './img/bagel.jpg';
 
 
 
-function buildHome() {
+function initHome() {
+    
     let home = document.createElement('div');
 
     home.classList.add('container');
@@ -14,6 +15,25 @@ function buildHome() {
     home.appendChild(createSection1(section1Text, buildCarousel()));
     home.appendChild(createSection2());
     home.appendChild(createSection3());
+    
+    return home;
+}
+
+function buildHome() {
+    let pageContent = document.getElementById('page-content');
+    let home = document.createElement('div');
+
+    pageContent.removeChild(pageContent.firstElementChild);
+
+    home.classList.add('container');
+    home.setAttribute('id', 'homePage');
+
+    let section1Text = S1P1Text();
+    home.appendChild(createSection1(section1Text, buildCarousel()));
+    home.appendChild(createSection2());
+    home.appendChild(createSection3());
+
+    pageContent.appendChild(home);
     
     return home;
 }
@@ -103,7 +123,7 @@ function S1P1Text() {
 }
 
 function buildCarousel() {
-    
+
     let carouselContainer = document.createElement('div');
     let breakfastPictures = document.createElement('div');
     let carouselInner = document.createElement('div');
@@ -146,4 +166,4 @@ function buildCarousel() {
     return carouselContainer;
 }
 
-export default buildHome;
+export {initHome, buildHome};
