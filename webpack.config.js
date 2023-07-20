@@ -7,9 +7,9 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        menu: './src/menu.js',
+        /* menu: './src/menu.js',
         home: './src/home.js',
-        contact: './src/contact.js',
+        contact: './src/contact.js', */
         hot: 'webpack/hot/dev-server.js',
         client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
     },

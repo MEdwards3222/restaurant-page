@@ -4,59 +4,75 @@
     <meta charset="utf-8">
     <title>Restaurant Page - Sunrise Delights</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="menu.bundle.js"></script><script defer src="home.bundle.js"></script><script defer src="contact.bundle.js"></script><script defer src="hot.bundle.js"></script><script defer src="client.bundle.js"></script></head>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="hot.bundle.js"></script><script defer src="client.bundle.js"></script></head>
   <body>
     <div class="container-fluid" id="content">
       
-      <div class="container-fluid" id="banner">
+      <!-- <div class="container-fluid" id="banner">
         <div class="text-center" id="name-container">
           <h1 id="restaurant-name">Sunrise Delights</h1>
           <h6 id="tagline">Begin your day</h6>
         </div>
       </div>
+      <div class="container" id="navigation">
+        <ul class="nav nav-underline justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
 
-      <div class="container" id="home-content">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+          </li>
 
-        <div class="container" id="navigation">
-          <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Menu</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
 
         <div class="container" id="page-content">
-          <h1 class="display-4">Breakfast, Brunch, & Lunch</h1>
-          <p>Welcome to Sunrise Delights, where every morning begins with a burst of flavor and a sip of perfection. Nestled in the heart of the city, our breakfast and brunch restaurant embraces the art of combining fresh, locally-sourced ingredients to create dishes that awaken your taste buds. Whether you crave a hearty omelette, fluffy pancakes, or a satisfying avocado toast, our skilled chefs craft each plate with passion and precision. And to complement your meal, we take pride in serving the finest aromatic coffees from around the world, brewed to perfection. Step into Sunrise Delights and let us elevate your mornings to new heights of culinary delight.</p>
-          <p>As you enter Sunrise Delights, the inviting aroma of freshly brewed coffee fills the air, welcoming you to a cozy and vibrant atmosphere. Our friendly staff greets you with genuine smiles, eager to make your breakfast experience unforgettable. With our commitment to using only the highest quality ingredients, you can indulge in guilt-free delights that nourish both your body and soul. From organic fruits bursting with natural sweetness to farm-fresh eggs and locally sourced vegetables, each ingredient is carefully selected to ensure a burst of flavors that leave you craving for more. At Sunrise Delights, we believe that breakfast is not just a meal; it's an opportunity to indulge in culinary artistry, to connect with loved ones, or to savor a quiet moment of solitude. Join us and embark on a culinary journey that will make your mornings brighter, tastier, and truly delightful.</p>
 
-          <div class="carousel slide" data-bs-ride="carousel" id="breakfast-pictures">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="d010dd4576b06db621de.jpg" class="d-block w-100" alt="">
-              </div>
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <h1 class="display-4">Breakfast, Brunch, & Lunch</h1>
+              <p>Welcome to Sunrise Delights, where every morning begins with a burst of flavor and a sip of perfection. Nestled in the heart of the city, our breakfast and brunch restaurant embraces the art of combining fresh, locally-sourced ingredients to create dishes that awaken your taste buds. Whether you crave a hearty omelette, fluffy pancakes, or a satisfying avocado toast, our skilled chefs craft each plate with passion and precision. And to complement your meal, we take pride in serving the finest aromatic coffees from around the world, brewed to perfection.</p>
+            </div>
 
-              <div class="carousel-item">
-                <img src="5e479b701182454aa92a.jpg" class="d-block w-100" alt="">
-              </div>
+            <div class="col-5" id="carousel-col">
+              <div id="carousel-container">
+                <div class="carousel slide" data-bs-ride="carousel" id="breakfast-pictures">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/waffle-syrup.jpg" class="d-block w-100" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img src="./img/oatmeal.jpg" class="d-block w-100" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img src="./img/bagel.jpg" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
 
-              <div class="carousel-item">
-                <img src="6d99a81c347cf0b5a88c.jpg" class="d-block w-100" alt="">
-              </div>
             </div>
           </div>
-          
-        </div>
+          <div class="row">
+            <p>As you enter Sunrise Delights, the inviting aroma of freshly brewed coffee fills the air, welcoming you to a cozy and vibrant atmosphere. Our friendly staff greets you with genuine smiles, eager to make your breakfast experience unforgettable. With our commitment to using only the highest quality ingredients, you can indulge in guilt-free delights that nourish both your body and soul. From organic fruits bursting with natural sweetness to farm-fresh eggs and locally sourced vegetables, each ingredient is carefully selected to ensure a burst of flavors that leave you craving for more. At Sunrise Delights, we believe that breakfast is not just a meal; it's an opportunity to indulge in culinary artistry, to connect with loved ones, or to savor a quiet moment of solitude. Join us and embark on a culinary journey that will make your mornings brighter, tastier, and truly delightful.</p>
+          </div>
 
-      </div>
+          <div class="row">
+            <div class="display-4">
+              A fully stocked breakfast bar - All for you
+            </div>
+            <p>At Sunrise Delights, we believe that a well-crafted breakfast experience is incomplete without a wide selection of beverages to accompany your meal. Our breakfast bar boasts an impressive array of refreshing and invigorating options, catering to every taste and preference. For those seeking a revitalizing boost, our freshly squeezed juices burst with vibrant flavors, sourced from the juiciest fruits nature has to offer. If you prefer a classic morning indulgence, our baristas skillfully prepare an assortment of artisanal coffees, from velvety cappuccinos to rich and bold espressos. For a touch of elegance, our collection of loose-leaf teas offers a journey through fragrant blends and soothing aromas. And for those looking to elevate their breakfast experience, our carefully curated selection of brunch cocktails will delight your senses, with mimosas, bellinis, and Bloody Marys crafted with the finest spirits and fresh garnishes. At Sunrise Delights, we understand that beverages are the perfect complement to a delectable meal, and our extensive drink options ensure that your morning is infused with a perfect balance of flavors and enjoyment.</p>
+          </div>
+
+        </div>
+ -->
+      
 
     </div>
   </body>

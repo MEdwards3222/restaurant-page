@@ -1,9 +1,11 @@
+import buildHome from "./home";
+
 function initializePage() {
     const content = document.getElementById("content");
 
     content.appendChild(buildBanner());
     content.appendChild(buildNavBar());
-    //content.appendChild(buildPageContent());
+    content.appendChild(buildPageContent());
 
     return content;
 }
@@ -51,14 +53,18 @@ function buildNavBar() {
 
     navbar.classList.add("nav", "nav-underline", "justify-content-center");
 
-    homeItem.classList.add("nav-item", "active");
+    homeItem.classList.add("nav-item");
     menuItem.classList.add("nav-item");
-    contactItem.classList.add("nav-item", "contact");
+    contactItem.classList.add("nav-item");
 
     homeLink.setAttribute("href", "#");
     menuLink.setAttribute("href", "#");
     contactLink.setAttribute("href", "#");
     homeLink.setAttribute("aria-current", "page");
+
+    homeLink.classList.add('nav-link', 'active');
+    menuLink.classList.add('nav-link');
+    contactLink.classList.add('nav-link');
 
     homeLink.appendChild(homeText);
     menuLink.appendChild(menuText);
@@ -78,8 +84,12 @@ function buildPageContent() {
     
     pageContent.classList.add("container");
     pageContent.setAttribute("id", "page-content");
+
+    pageContent.appendChild(buildHome());
+
+    /* pageContent.appendChild(buildHome()); */
     
-    let section1Text = S1P1Text();
+    /* let section1Text = S1P1Text();
     pageContent.appendChild(createSection1(section1Text, buildCarousel()));
     pageContent.appendChild(createSection2());
     pageContent.appendChild(createSection3());
@@ -210,7 +220,9 @@ function buildPageContent() {
         
 
         return carouselCol;
-    }
+    } */
+
+    return pageContent;
 }
 
 export default initializePage;
