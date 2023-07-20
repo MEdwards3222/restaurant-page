@@ -103,7 +103,7 @@ function S1P1Text() {
 }
 
 function buildCarousel() {
-    let carouselCol = document.createElement('div');
+    
     let carouselContainer = document.createElement('div');
     let breakfastPictures = document.createElement('div');
     let carouselInner = document.createElement('div');
@@ -113,10 +113,6 @@ function buildCarousel() {
     let carouselItem1Img = document.createElement('img');
     let carouselItem2Img = document.createElement('img');
     let carouselItem3Img = document.createElement('img');
-
-
-    carouselCol.classList.add('col-5');
-    carouselCol.setAttribute("id", "carousel-col");
 
     carouselContainer.setAttribute('id', 'carousel-container');
 
@@ -144,10 +140,10 @@ function buildCarousel() {
     carouselInner.append(carouselItem1, carouselItem2, carouselItem3);
     breakfastPictures.appendChild(carouselInner);
     carouselContainer.appendChild(breakfastPictures);
-    carouselCol.appendChild(carouselContainer);
+    
     
 
-    return carouselCol;
+    return carouselContainer;
 }
 
 export default buildHome;
