@@ -1,7 +1,7 @@
 function buildContact() {
     let pageContent = document.getElementById('page-content');
 
-    pageContent.removeChild(pageContent.firstChild);
+    pageContent.textContent = "";
 
     pageContent.appendChild(testContact());
     return pageContent;

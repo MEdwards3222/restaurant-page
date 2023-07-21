@@ -23,7 +23,7 @@ function buildHome() {
     let pageContent = document.getElementById('page-content');
     let home = document.createElement('div');
 
-    pageContent.removeChild(pageContent.firstElementChild);
+    pageContent.textContent = "";
 
     home.classList.add('container');
     home.setAttribute('id', 'homePage');

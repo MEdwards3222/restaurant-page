@@ -1,46 +1,47 @@
+import { cardBuilder } from "./menuItems";
+import { capitalizeFirstLetter } from "./util";
+
 function buildMenu() {
     let pageContent = document.getElementById('page-content');
 
-    pageContent.removeChild(pageContent.firstChild);
+    pageContent.textContent = "";
 
-    pageContent.appendChild(breakfastMenu());
+    pageContent.appendChild(mealMenu("breakfast"));
+    pageContent.appendChild(mealMenu("brunch"));
+    pageContent.appendChild(mealMenu("lunch"));
+
     return pageContent;
 }
 
-function testMenu() {
-    let menuPage = document.createElement('div');
-
-    menuPage.classList.add("container");
-    menuPage.setAttribute('id', 'menuPage');
-    menuPage.textContent = "This is the menu";
-
-    return menuPage;
-}
-
-function breakfastMenu() {
-    let breakfast = document.createElement('div');
+function mealMenu(meal) {
+    let mealContainer = document.createElement('div');
     let header = document.createElement('h1');
 
-    breakfast.classList.add('container-fluid');
-    breakfast.setAttribute('id', 'breakfast-container');
+    mealContainer.classList.add('container-fluid');
+    mealContainer.setAttribute('id', `${meal}-container`);
 
     header.classList.add('display-5');
-    header.setAttribute('id', 'breakfast-header');
-    header.textContent = "Breakfast";
+    header.setAttribute('id', `${meal}-header`);
+    header.textContent = `${capitalizeFirstLetter(meal)}`;
 
-    breakfast.appendChild(header);
-    breakfast.appendChild(breakfastItems());
+    mealContainer.appendChild(header);
+    mealContainer.appendChild(mealItems(meal));
 
-    return breakfast;
+    return mealContainer;
 }
 
-function breakfastItems() {
-    let breakfastContainer = document.createElement('div');
+function mealItems(meal) {
+    let mealItemContainer = document.createElement('div');
+    let breakfastMap = cardBuilder();
 
-    breakfastContainer.classList.add('container');
-    breakfastContainer.setAttribute('id', 'breakfast-items');
+    mealItemContainer.classList.add('container');
+    mealItemContainer.setAttribute('id', `${meal}-items`);
 
-    return breakfastContainer;
+    for (let item of breakfastMap.values()) {
+        mealItemContainer.appendChild(item);
+    }
+
+    return mealItemContainer;
 }
 
 export {buildMenu};

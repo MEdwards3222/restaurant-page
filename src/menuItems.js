@@ -32,7 +32,7 @@ function cardBuilder() {
 
         menuMap.set(i, menuListings);
     }
-    
+
     return menuMap;
 }
 
@@ -49,3 +49,5 @@ function menuGenerator() {
 
     return menu;
 }
+
+export {cardBuilder};

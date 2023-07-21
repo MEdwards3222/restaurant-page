@@ -15,4 +15,8 @@ function setActiveBtn(button) {
     button.classList.add('active');
 }
 
-export {removePreviousContent, setActiveBtn};
+function capitalizeFirstLetter(string) {
+    return string[0].toUpperCase() + string.slice(1);
+}
+
+export {removePreviousContent, setActiveBtn, capitalizeFirstLetter};

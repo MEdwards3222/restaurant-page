@@ -58,8 +58,7 @@
 #page-content {
     height: auto;
     background-color: #fed7aa;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
 }
 
 #carousel-container {
@@ -88,4 +87,9 @@
 
 .carousel-inner > .carousel-item > img {
     max-height: 300px;
+}
+
+#breakfast-items, #brunch-items, #lunch-items {
+    display: flex;
+    justify-content: space-around;
 }
