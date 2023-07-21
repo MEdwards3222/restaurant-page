@@ -79,19 +79,19 @@ function buildNavBar() {
 
     homeItem.addEventListener("click", (e) => {
         if(e.target.classList.contains("active")) return;
-        setActiveBtn(homeItem);
+        setActiveBtn(homeLink);
         buildHome();
     });
 
     menuItem.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveBtn(menuItem);
+        setActiveBtn(menuLink);
         buildMenu();
     });
 
     contactItem.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveBtn(contactItem);
+        setActiveBtn(contactLink);
         buildContact();
     });
 
