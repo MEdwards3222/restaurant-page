@@ -17,4 +17,11 @@ function testContact() {
     return menuPage;
 }
 
+function contactInfo() {
+    let contactInfo = document.createElement('div');
+
+    contactInfo.classList.add('container');
+    contactInfo.setAttribute('id', 'contact-information');
+}
+
 export {buildContact};
