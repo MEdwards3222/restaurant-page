@@ -1,19 +1,19 @@
 import { cardBuilder } from "./menuItems";
 import { capitalizeFirstLetter } from "./util";
 
-function buildMenu() {
+async function buildMenu() {
     let pageContent = document.getElementById('page-content');
 
     pageContent.textContent = "";
 
-    pageContent.appendChild(mealMenu("breakfast"));
-    pageContent.appendChild(mealMenu("brunch"));
-    pageContent.appendChild(mealMenu("lunch"));
+    pageContent.appendChild(await mealMenu("breakfast"));
+    pageContent.appendChild(await mealMenu("brunch"));
+    pageContent.appendChild(await mealMenu("lunch"));
 
     return pageContent;
 }
 
-function mealMenu(meal) {
+async function mealMenu(meal) {
     let mealContainer = document.createElement('div');
     let header = document.createElement('h1');
 
@@ -25,14 +25,14 @@ function mealMenu(meal) {
     header.textContent = `${capitalizeFirstLetter(meal)}`;
 
     mealContainer.appendChild(header);
-    mealContainer.appendChild(mealItems(meal));
+    mealContainer.appendChild(await mealItems(meal));
 
     return mealContainer;
 }
 
-function mealItems(meal) {
+async function mealItems(meal) {
     let mealItemContainer = document.createElement('div');
-    let breakfastMap = cardBuilder();
+    let breakfastMap = await cardBuilder(meal);
 
     mealItemContainer.classList.add('container');
     mealItemContainer.setAttribute('id', `${meal}-items`);

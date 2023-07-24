@@ -1,3 +1,4 @@
+import json from './json/menu.json';
 
 function removePreviousContent(element) {
     element.removeChild(element.firstChild);
@@ -19,4 +20,12 @@ function capitalizeFirstLetter(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
 
-export {removePreviousContent, setActiveBtn, capitalizeFirstLetter};
+async function jsonLoader() {
+    const response = await fetch(json);
+    const menuJSON = await response.json();
+    
+
+    return menuJSON;
+}
+
+export {removePreviousContent, setActiveBtn, capitalizeFirstLetter, jsonLoader};
