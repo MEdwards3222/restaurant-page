@@ -1,0 +1,54 @@
+{
+    "menu": {
+        "breakfast": [
+        {
+            "name": "Farmers' Market Omelette:",
+            "description": "A delectable combination of fluffy eggs, sautéed spinach, ripe cherry tomatoes, and tangy feta cheese, this nutritious omelette is a burst of flavors. Served with a side of freshly baked whole-grain toast and a dollop of zesty avocado salsa, this breakfast will fuel your day with wholesome goodness."
+        },
+
+        {
+            "name": "Blueberry Almond Pancakes:",
+            "description": "Indulge in a stack of light and airy whole-wheat pancakes, generously studded with juicy blueberries and toasted almond slivers. Topped with a drizzle of pure maple syrup and a sprinkle of powdered sugar, these pancakes offer a delightful balance of sweetness and nuttiness to satisfy your morning cravings."
+        },
+
+        {
+            "name": "Tropical Acai Bowl",
+            "description": "Transport yourself to a tropical paradise with this refreshing acai bowl. Blended with creamy coconut milk and frozen mixed berries, the velvety acai base is adorned with a vibrant array of sliced kiwi, ripe mango, and crunchy granola. Topped with a sprinkle of shredded coconut and a swirl of honey, this bowl is a delightful fusion of flavors and textures for a revitalizing breakfast."
+        }
+    ],
+
+        "brunch": [
+            {
+                "name": "Savory Spinach and Goat Cheese Quiche",
+                "description": "A buttery, flaky pastry crust envelops a rich and creamy quiche filling, featuring sautéed spinach, tangy goat cheese, and a hint of garlic. Served with a side of mixed greens drizzled with balsamic vinaigrette, this quiche is the perfect balance of flavors for a satisfying brunch."
+            },
+
+            {
+                "name": "Smoked Salmon Eggs Benedict",
+                "description": "Elevate your brunch experience with this classic dish, featuring perfectly poached eggs resting atop toasted English muffins and layers of smoked salmon. Topped with velvety hollandaise sauce and garnished with fresh dill, this luxurious brunch item offers a delightful combination of textures and tastes."
+            },
+
+            {
+                "name": "Stuffed Brioche French Toast",
+                "description": "Indulge in thick slices of brioche bread, generously stuffed with a luscious mixture of cream cheese and raspberry preserves, dipped in a cinnamon-infused egg batter, and griddled to golden perfection. Topped with a dusting of powdered sugar and a drizzle of warm maple syrup, this sweet and decadent French toast is a brunch treat that will leave you craving for more."
+            }
+        ],
+
+        "lunch": [
+            {
+                "name": "Breakfast Burrito Wrap",
+                "description": "A delightful fusion of breakfast and lunch, this hearty burrito features scrambled eggs, crispy bacon, diced potatoes, and melted cheddar cheese, all wrapped in a warm flour tortilla. Served with a side of tangy salsa and fresh avocado slices, this satisfying dish will keep you fueled throughout the day."
+            },
+
+            {
+                "name": "Eggs Benedict Burger",
+                "description": "Elevate your lunch with a twist on a brunch classic – a succulent beef patty topped with poached eggs, Canadian bacon, and velvety hollandaise sauce. Nestled in a soft brioche bun and accompanied by seasoned potato wedges, this burger brings the flavors of breakfast to the lunch table."
+            },
+
+            {
+                "name": "Avocado and Bacon Salad",
+                "description": "This refreshing salad combines crisp mixed greens, ripe avocado slices, cherry tomatoes, and crunchy bacon bits, all tossed in a zesty lemon vinaigrette. Topped with a perfectly poached egg and a sprinkle of toasted almonds, this wholesome lunch option offers a delightful marriage of breakfast ingredients in a light and satisfying dish."
+            }
+        ]
+    }
+}

@@ -19,7 +19,6 @@ function cardBuilder() {
         let cardBody = document.createElement('p');
     
         menuListings.classList.add('card');
-        menuListings.setAttribute('id', 'menu-card');
     
         cardName.classList.add('card-title');
         cardName.textContent = menu[i].getName();
